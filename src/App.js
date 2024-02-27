@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Avatar from "./components/Avatar";
+import Hero from "./components/Hero";
+import Products from "./components/Products"
 
 function App() {
+  const cursorStyle = { cursor: `url(/cursor.svg), pointer` };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" bla flex flex-col" style={cursorStyle}>
+    <Hero/>
+    <Products/>
+    <Avatar/>
+    
     </div>
+    
   );
 }
 
